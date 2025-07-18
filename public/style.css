@@ -1,0 +1,158 @@
+/* General Styles for all pages */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container, .form-container, .edit-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Titles */
+.title, .form-title, .edit-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-chat-btn {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.new-chat-btn:hover {
+    background-color: #1e8449;
+}
+
+.edit-btn {
+    background-color: #2980b9;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #1f6391;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.submit-btn, .update-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.submit-btn:hover, .update-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Form Styling */
+.chat-form, .edit-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-input, .form-textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Chat Info for Edit Page */
+.chat-info {
+    text-align: center;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* All Chats Page Styling */
+.chats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat-box {
+    background: #ffffff;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chat-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.chat-box p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.chat-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+}
+
+/* Form Centering on New & Edit Pages */
+.form-container, .edit-container {
+    margin: 40px auto;
+}
